@@ -1,0 +1,51 @@
+#content1 {
+  background-color: #EDE9E9;
+  grid-area: content1;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container1 {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 50px 1fr;  
+  grid-template-areas:
+  "intro-title intro-title"
+  "intro-about intro-image";
+  grid-gap: 25px;
+}
+
+.intro-title {
+  grid-area: intro-title;
+}
+
+.intro-title div div{
+  color: #344A66;
+  font-weight: 600;
+  font-size: 25px;
+
+  width: 100%;
+  padding-top: 7px;
+  border-bottom: 2px solid #344A66;
+}
+
+.intro-about {
+  grid-area: intro-about;
+}
+
+.intro-about p {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.intro-image {
+  background-color: rgb(255, 255, 255);
+  grid-area: intro-image;
+
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px gray;
+}
